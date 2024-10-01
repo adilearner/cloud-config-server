@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: CONFIG-SERVER
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/adilearner/microservices-configuration-server
+        
+#  profiles :
+#    active :
+#      - dev
+
+server:
+  port: 9196
+
+#Commenting below properties from here as it is configured in Github and fetched by the spring cloud config server
+#eureka:
+#  instance:
+#    prefer-ip-address: true
+#  client :
+#    fetch-registry: true
+#    register-with-eureka : true
+#    service-url:
+#      defaultZone : http://localhost:8761/eureka
